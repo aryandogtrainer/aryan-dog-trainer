@@ -149,4 +149,27 @@
   .btn-whatsapp:hover {
     transform: scale(1.1);
   }
+
+  .paw-pattern {
+    background-image: radial-gradient(hsl(var(--primary) / 0.08) 2px, transparent 2px);
+    background-size: 28px 28px;
+  }
+
+  .float-slow { animation: float 6s ease-in-out infinite; }
+  .float-slower { animation: float 8s ease-in-out infinite; }
+  .wiggle { animation: wiggle 3s ease-in-out infinite; transform-origin: bottom center; }
+  .fade-up { animation: fadeUp 0.7s ease-out both; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
