@@ -13,10 +13,10 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-16">
+      <section className="hero-gradient text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black">About Aryan Dog Trainer</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto text-black">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Aryan Dog Trainer</h1>
+          <p className="text-xl opacity-90 max-w-3xl mx-auto">
             Professional dog training services with a passion for building stronger bonds between dogs and their families
           </p>
         </div>
