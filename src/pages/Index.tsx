@@ -42,7 +42,7 @@ const Index = () => {
             <div className="fade-up">
               <span className="eyebrow mb-5">Enjoy your vacation</span>
               <h1 className="font-display text-5xl md:text-7xl text-secondary leading-[1.05] mb-6 mt-3">
-                We Pamper Your <br/>
+               Aryan’s Den of Dogs Pamper Your <br/>
                 <span className="relative inline-block">
                   Pup Like
                   <span className="absolute -bottom-2 left-0 w-full h-3 bg-primary/60 -z-0" aria-hidden />
