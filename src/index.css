@@ -2,108 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Aryan Dog Trainer Design System */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Aryan's Den of Dogs — Cream + Navy + Amber Design System */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Dog Training Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 25 47% 15%;
+    --background: 42 60% 95%;        /* cream */
+    --foreground: 222 55% 18%;       /* deep navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 25 47% 15%;
+    --card-foreground: 222 55% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 47% 15%;
+    --popover-foreground: 222 55% 18%;
 
-    /* Orange Primary Theme */
-    --primary: 22 92% 52%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 22 92% 45%;
+    /* Amber yellow primary (CTA) */
+    --primary: 42 95% 55%;
+    --primary-foreground: 222 55% 18%;
+    --primary-hover: 42 95% 48%;
 
-    /* Brown Secondary */
-    --secondary: 25 47% 15%;
+    /* Navy secondary (headlines) */
+    --secondary: 222 55% 18%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Orange Accent */
-    --accent: 22 92% 52%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 350 100% 92%;
+    --accent-foreground: 222 55% 18%;
 
-    --muted: 20 14% 96%;
-    --muted-foreground: 25 23% 45%;
+    --muted: 42 55% 90%;
+    --muted-foreground: 222 25% 35%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 20 14% 92%;
-    --input: 20 14% 96%;
-    --ring: 22 92% 52%;
+    --border: 42 40% 85%;
+    --input: 42 40% 92%;
+    --ring: 42 95% 55%;
 
-    --radius: 8px;
+    --radius: 14px;
 
-    /* Custom Brand Colors */
-    --hero-gradient: linear-gradient(135deg, hsl(22 92% 52%), hsl(28 87% 67%));
-    --warm-orange: 28 87% 67%;
-    --dark-brown: 25 47% 15%;
-    --light-orange: 25 95% 95%;
-    
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(22 92% 52% / 0.15);
-    --shadow-card: 0 2px 10px hsl(25 47% 15% / 0.1);
+    --hero-gradient: linear-gradient(135deg, hsl(42 60% 95%), hsl(42 70% 92%));
+    --warm-cream: 42 60% 95%;
+    --deep-navy: 222 55% 18%;
+    --amber: 42 95% 55%;
+    --soft-pink: 350 100% 92%;
+
+    --shadow-soft: 0 10px 30px hsl(222 55% 18% / 0.12);
+    --shadow-card: 0 4px 16px hsl(222 55% 18% / 0.08);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 25 47% 15%;
-    --foreground: 0 0% 100%;
-
-    --card: 25 40% 20%;
-    --card-foreground: 0 0% 100%;
-
-    --popover: 25 47% 15%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 22 92% 52%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 25 40% 25%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 25 30% 25%;
-    --muted-foreground: 20 14% 70%;
-
-    --accent: 22 92% 52%;
-    --accent-foreground: 0 0% 100%;
-
+    --background: 222 55% 12%;
+    --foreground: 42 60% 95%;
+    --card: 222 50% 16%;
+    --card-foreground: 42 60% 95%;
+    --popover: 222 55% 12%;
+    --popover-foreground: 42 60% 95%;
+    --primary: 42 95% 55%;
+    --primary-foreground: 222 55% 18%;
+    --secondary: 222 40% 25%;
+    --secondary-foreground: 42 60% 95%;
+    --muted: 222 30% 25%;
+    --muted-foreground: 42 30% 70%;
+    --accent: 42 95% 55%;
+    --accent-foreground: 222 55% 18%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-
-    --border: 25 30% 30%;
-    --input: 25 30% 25%;
-    --ring: 22 92% 52%;
+    --border: 222 30% 25%;
+    --input: 222 30% 25%;
+    --ring: 42 95% 55%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
 
   body {
     @apply bg-background text-foreground font-sans;
@@ -111,65 +91,72 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Fraunces', 'Poppins', serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
   }
 }
 
 @layer components {
-  .hero-gradient {
-    background: var(--hero-gradient);
+  .hero-gradient { background: var(--hero-gradient); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+
+  .font-display { font-family: 'Fraunces', serif; font-weight: 800; }
+
+  .eyebrow {
+    @apply inline-block text-sm font-semibold tracking-wide text-primary uppercase;
   }
-  
-  .shadow-soft {
-    box-shadow: var(--shadow-soft);
+  .eyebrow::before { content: "// "; }
+  .eyebrow::after  { content: " //"; }
+
+  /* Torn / ripped paper edge for hero photo */
+  .torn-edge {
+    -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 92%, transparent 96%);
+            mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 92%, transparent 96%);
+    border-radius: 24px;
   }
-  
-  .shadow-card {
-    box-shadow: var(--shadow-card);
+
+  .dot-grid {
+    background-image: radial-gradient(hsl(350 100% 80% / 0.9) 3px, transparent 3px);
+    background-size: 18px 18px;
   }
-  
+
   .btn-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+    background: #25D366; color: white; border-radius: 50%;
+    width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
     transition: transform 0.3s ease;
   }
-  
-  .btn-whatsapp:hover {
-    transform: scale(1.1);
-  }
+  .btn-whatsapp:hover { transform: scale(1.1); }
 
   .paw-pattern {
-    background-image: radial-gradient(hsl(var(--primary) / 0.08) 2px, transparent 2px);
+    background-image: radial-gradient(hsl(var(--secondary) / 0.06) 2px, transparent 2px);
     background-size: 28px 28px;
   }
 
-  .float-slow { animation: float 6s ease-in-out infinite; }
+  .float-slow   { animation: float 6s ease-in-out infinite; }
   .float-slower { animation: float 8s ease-in-out infinite; }
-  .wiggle { animation: wiggle 3s ease-in-out infinite; transform-origin: bottom center; }
-  .fade-up { animation: fadeUp 0.7s ease-out both; }
+  .wiggle       { animation: wiggle 3s ease-in-out infinite; transform-origin: bottom center; }
+  .fade-up      { animation: fadeUp 0.7s ease-out both; }
+  .marquee      { animation: marquee 30s linear infinite; }
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  50%      { transform: translateY(-12px); }
 }
 @keyframes wiggle {
   0%, 100% { transform: rotate(-2deg); }
-  50% { transform: rotate(2deg); }
+  50%      { transform: rotate(2deg); }
 }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
