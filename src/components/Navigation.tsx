@@ -28,8 +28,8 @@ const Navigation = () => {
                 <span className="text-white font-bold text-lg">🐕</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-secondary">Aryan Dog Trainer</h1>
-                <p className="text-sm text-muted-foreground">Professional Training</p>
+                <h1 className="text-xl font-bold text-secondary">Aryan’s Den of Dogs</h1>
+                <p className="text-sm text-muted-foreground">Bilkul Ghar jaisa </p>
               </div>
             </div>
           </div>
