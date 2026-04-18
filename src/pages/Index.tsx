@@ -285,7 +285,7 @@ const Index = () => {
           </p>
           <div className="flex items-center justify-center gap-3 mb-2">
             <Heart className="w-5 h-5 fill-primary text-primary" />
-            <p className="text-sm text-secondary font-semibold">Powered by Aryan Dog Trainer · 5+ Years of Experience</p>
+            <p className="text-sm text-secondary font-semibold">Powered by Aryan's Den of Dogs · 5+ Years of Experience</p>
             <Heart className="w-5 h-5 fill-primary text-primary" />
           </div>
           <Button
